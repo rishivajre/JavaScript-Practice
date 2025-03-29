@@ -19,13 +19,25 @@ for (let i=0; i<rows; i++){
 
 // Loop to print the matrix elements
 console.log("The matrix is: ");
+// for (let i=0; i<rows; i++){
+//     console.log(matrix[i].join(" ")); // Join each row with a space and print it
+// }
+
 for (let i=0; i<rows; i++){
-    console.log(matrix[i].join(" ")); // Join each row with a space and print it
+    for (let j=0; j<cols; j++){
+        process.stdout.write(matrix[i][j] + " ");
+    }
+    console.log(); // Move to the next line after each row
 }
 
-// for (let i=0; i<rows; i++){
-//     for (let j=0; j<cols; j++){
-//         process.stdout.write(matrix[i][j] + " ");
-//     }
-//     console.log(); // Move to the next line after each row
-// }
+console.log('Enter the element to search in the matrix: ');
+const x = parseInt(prompt(''));
+
+ for (let i=0; i<rows; i++){
+    for (let j=0; j<cols; j++){
+        if (matrix[i][j] === x){
+            console.log(`Element ${x} found at position [${i}] [${j}]`);
+
+        }
+    }
+ }
