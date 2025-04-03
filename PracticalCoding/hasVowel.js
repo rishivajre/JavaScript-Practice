@@ -53,3 +53,35 @@ function hasVowelForOf(str) {
 }
 console.log(hasVowelForOf("Hellos"));
 console.log('-------------------');
+
+//Aproach 06: Using Array.prototype.reduce()
+function hasVowelReduce(str) {
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    return str.toLowerCase().split('').reduce((found, char) => {
+        return found || vowels.includes(char); // Check if any character is a vowel
+    }, false); // Initial value is false
+}
+console.log(hasVowelReduce("Hellos")); // true
+console.log(hasVowelReduce("sky"));    // false
+console.log('-------------------');
+
+//Aproach 07: Using .every() method
+function hasVowelEvery(str) {
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    return str.toLowerCase().split('').every(char => vowels.includes(char)); // Check if all characters are vowels
+    // Note: This will return false if no vowels are found
+}
+console.log(hasVowelEvery("hello")); // false
+console.log(hasVowelEvery("aeiou")); // true
+console.log('-------------------');
+
+//Aproach 08: Using String.prototype.filter()
+function hasVowelFilter(str) {
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    return str.toLowerCase().split('')
+            .filter(char => vowels.includes(char)).length > 0; // Check if any character is a vowel
+    // Note: This will return false if no vowels are found
+}
+
+console.log(hasVowelFilter("Hellos")); // true
+console.log(hasVowelFilter("sky"));    // false
