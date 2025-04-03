@@ -40,3 +40,16 @@ function hasVowelSet(str) {
     // Checks if any character is a vowel
 }
 console.log(hasVowelSet("Hellos"));
+console.log('-------------------');
+
+//Aproach 05: Using for...of loop
+function hasVowelForOf(str) {
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    for (const char of str.toLowerCase()) {
+        if (vowels.includes(char)) {
+            return true; // Vowel found
+        }
+    } return false; // No vowel found
+}
+console.log(hasVowelForOf("Hellos"));
+console.log('-------------------');
