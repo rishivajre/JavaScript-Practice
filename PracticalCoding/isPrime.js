@@ -43,6 +43,6 @@ console.log("Functional check: ");
     if(isPrimeFunctional(num)) {
         console.log(`${num} is a Prime Number!`)
     } else {
-        console.log(`${num} is not a Prime Number..`)
+        console.log(`${num} is not a Prime Number..`) // 
     }
 });
