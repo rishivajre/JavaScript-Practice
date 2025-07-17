@@ -1,3 +1,6 @@
+
+//✅ Scope
+
 let outer = "I'm Global var";
 
 function testSCope() {
