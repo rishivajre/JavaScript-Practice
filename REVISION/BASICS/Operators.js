@@ -37,4 +37,5 @@ let y = false;
 console.log(p && y); // false bcoz both values are not true logically and operator returns true only if both operands are true
 console.log(p || y); // true bcoz at least one value is true logically and operator returns true if at least one operand is true
 console.log(!p); // false (Logical NOT, negates the value of p)
-console.log(!y); // true (Logical NOT, negates the value of y)
+console.log(!y); // tru
+// e (Logical NOT, negates the value of y)
