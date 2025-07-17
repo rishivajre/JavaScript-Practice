@@ -48,4 +48,25 @@ let num = 1;
 do {
     console.log("do..while loop: " + num);
     num++;
-} while (num <= 4);
+} while (false);
+
+
+//What is the output?
+let x = 5;
+if (x === '5') { // Not Equal
+  console.log("Equal");
+} else {
+  console.log("Not Equal");
+}
+
+let fruit = "apple";
+switch(fruit) {
+    case "banana":
+        console.log("Banana");
+    break;
+    case "apple":
+        console.log("Apple");
+    break;
+    default:
+        console.log("No fruits available");
+}
