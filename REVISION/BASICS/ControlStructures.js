@@ -1,5 +1,6 @@
-// ✅ Practice Code: if Else Statements
+// ✅ Practice Code: 
 
+// ---------------if Else Statements
 let score = 85;
 
 if(score >= 90) {
@@ -10,8 +11,8 @@ if(score >= 90) {
     console.log ("C Grade");
 }
 console.log("-----------------------")
-// Switch Statement
 
+//---------------Switch Statement
 let color = "blue";
 
 switch(color) {
@@ -27,3 +28,24 @@ switch(color) {
     default:
         console.log("Unknown Color");
 }
+console.log("-----------------------")
+
+//--------------- Loops (for, while, do.. while)
+//for
+for (let i=0; i<=4; i++) {
+    console.log ("for loop: " + i);
+}
+
+// while 
+let count = 1;
+while (count<=3) {
+    console.log("while loop: " + count);
+    count++;
+}
+
+//do...while
+let num = 1;
+do {
+    console.log("do..while loop: " + num);
+    num++;
+} while (num <= 4);
