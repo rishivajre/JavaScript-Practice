@@ -10,7 +10,7 @@ if(score >= 90) {
 } else {
     console.log ("C Grade");
 }
-console.log("-----------------------")
+console.log("-----------------------");
 
 //---------------Switch Statement
 let color = "blue";
@@ -28,7 +28,7 @@ switch(color) {
     default:
         console.log("Unknown Color");
 }
-console.log("-----------------------")
+console.log("-----------------------");
 
 //--------------- Loops (for, while, do.. while)
 //for

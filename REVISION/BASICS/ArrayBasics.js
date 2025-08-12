@@ -36,6 +36,7 @@ let arr2 = [1, 2, 3, 4, 5];
 let arr3 = arr.concat(arr2); // Concatenates arr and arr2   
 
 console.log("Concat: " + arr3); // [4, 7, 8, 11, 12, 1, 2, 3, 4, 5]
+
 // Using forEach to iterate over the array
 arr3.forEach((element, index) => {
     console.log(`Element at index ${index}: ${element}`);
@@ -64,7 +65,6 @@ console.log("Contains 12: " + containsTwelve); // true
 // Using indexOf to find the index of a specific element
 let indexOfEight = arr3.indexOf(8); 
 console.log("Index of 8: " + indexOfEight); // 2
-
 
 // Using slice to get a portion of the array
 let slicedArr = arr3.slice(2, 5); // Gets elements from index
