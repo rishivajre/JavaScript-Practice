@@ -7,9 +7,9 @@ function reverseInteger(num) {
   while (num !== 0) {
     
     if (result > Number.MAX_SAFE_INTEGER/10) return 0;
+
     let lastDigit = num % 10;
     result = result * 10 + lastDigit;
-
     num = Math.floor(num / 10);
   }
 

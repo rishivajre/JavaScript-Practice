@@ -1,9 +1,10 @@
 function reverseInteger(num) {
-    const sign = num < 0 ? -1 : 1;
+  const sign = num < 0 ? -1 : 1;
 
-    const reversedStr = Math.abs(num).toString().split('').reverse().join('');
-    const reversedNum = parseInt(reversedStr, 10);
-    return sign * reversedNum;
+  const reversedString = Math.abs(num).toString().split("").reverse().join("");
+  const reversedNum = parseInt(reversedString, 10);
+  
+  return reversedNum * sign;
 }
 
-console.log(reverseInteger(1234))
+console.log(reverseInteger(678));
