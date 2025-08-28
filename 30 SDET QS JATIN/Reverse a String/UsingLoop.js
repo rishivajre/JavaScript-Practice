@@ -1,10 +1,9 @@
-function reverseStringLoop(str) {
+function reverseStringUsingLoop(str) {
   let reversed = "";
   for (let char of str) {
     reversed = char + reversed;
   }
-
   return reversed;
 }
 
-console.log(reverseStringLoop("Hellow"));
+console.log(reverseStringUsingLoop("Hello"));
