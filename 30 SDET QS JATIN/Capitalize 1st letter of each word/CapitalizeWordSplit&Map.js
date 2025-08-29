@@ -4,4 +4,4 @@ function Capitalize1stLetterOfWords(str) {
                 .join(" ");
 }
 
-console.log(Capitalize1stLetterOfWords("i love my country!!!"))
+console.log(Capitalize1stLetterOfWords("i love my country!!!"));
