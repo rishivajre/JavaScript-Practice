@@ -5,5 +5,5 @@ function isPalindrom(str) {
     return cleaned === cleaned.split('').reverse().join('');
 }
 
-console.log(isPalindrom("MADAM"));
+console.log(isPalindrom("Madam, I'm Adam!"));
 console.log(isPalindrom("sdf"));
