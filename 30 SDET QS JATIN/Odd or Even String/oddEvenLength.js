@@ -9,3 +9,4 @@ function oddEvenLength(str) {
 }
 
 oddEvenLength("Martha");
+oddEvenLength("Marhhhtha");
