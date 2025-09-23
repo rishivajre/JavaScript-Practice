@@ -16,4 +16,4 @@ function findDuplicateLetters(str) {
   }
 }
 
-findDuplicateLetters("Hello, Geordon")
+findDuplicateLetters("Hello, Geordon");
