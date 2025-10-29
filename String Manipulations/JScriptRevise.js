@@ -84,12 +84,57 @@ num.forEach(num => {
 })
 
 console.log('------------Asynchronous Callback Example (setTimeout)-----------');
-
-console.log('start');
+console.log('Start');
 
 function finish() {
-    console.log('finish');
+    console.log('Finish');
 }
 
-setTimeout(finish, 2000); // The 'finish' function is the callback.
-console.log("waiting...");
+setTimeout(finish, 2000);
+
+console.log('waiting...');
+
+console.log('-----------------call, apply, bind----------------------');
+
+/**call()
+The call() method invokes a function immediately, with a specified 'this' value and arguments provided individually. */
+const person = {
+    name: 'Rishi'
+};
+
+function greet(greeting) {
+    console.log(`call: ${greeting}, my name is ${this.name}`);
+}
+
+greet.call(person, "Hello");
+
+const person1 = {
+    firstName: 'Rishi',
+    lastName: 'Vajre'
+}
+
+const person2 = {
+    firstName: 'John',
+    lastName: 'Smith'
+}
+
+function getFullName() {
+    return `${this.firstName} ${this.lastName}`
+}
+
+console.log(getFullName.call(person1));
+console.log(getFullName.call(person2));
+
+/**apply()
+The apply() method is similar to call(), but it takes arguments as an array instead of individually. */
+
+const numbers = [1111,4,56,6];
+
+const maxNumber = Math.max.apply(null, numbers);
+console.log(maxNumber);
+
+function greet(msg) {console.log(msg, this.name);}
+const user1 = {name: "Alice"};
+greet.call(user1, "Hi");
+greet.apply(user1, ["Hello"]);
+const bound = greet.bind(user1, "Yoo!"); bound();
